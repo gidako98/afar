@@ -48,7 +48,7 @@ def main():
         thr = float(json.load(f)["threshold"])
 
     # пример: берём первую строку из dataset.csv
-    x = load_one_from_csv("dataset.csv", row=0).to(device)
+    x = load_one_from_csv("dataset_correct.csv", row=18).to(device)
 
     with torch.no_grad():
         logits = model(x)  # (1,16)

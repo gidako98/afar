@@ -96,7 +96,7 @@ def main():
     np.random.seed(42)
     torch.manual_seed(42)
 
-    path = "dataset.csv"
+    path = "dataset_correct.csv"
     df = pd.read_csv(path, header=None)
     n = len(df)
 
